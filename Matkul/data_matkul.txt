@@ -1,0 +1,82 @@
+[
+  {
+    "hari": "Rabu",
+    "pukul": "07:30 - 09:00 WIB",
+    "kode": "15920105",
+    "mata_kuliah": "Bahasa Indonesia",
+    "teori": 2,
+    "praktik": 1,
+    "jumlah_sks": 3,
+    "dosen": "Rizki Fitriani, M.Pd"
+  },
+  {
+    "hari": "Rabu",
+    "pukul": "09:00 - 10:30 WIB",
+    "kode": "15920119",
+    "mata_kuliah": "Statistika",
+    "teori": 1,
+    "praktik": 2,
+    "jumlah_sks": 3,
+    "dosen": "Desi Nurhabbah, M.E"
+  },
+  {
+    "hari": "Rabu",
+    "pukul": "10:30 - 12:00 WIB",
+    "kode": "15920116",
+    "mata_kuliah": "Digital Marketing",
+    "teori": 1,
+    "praktik": 2,
+    "jumlah_sks": 3,
+    "dosen": "Rika Komariah, M.Ak"
+  },
+  {
+    "hari": "Rabu",
+    "pukul": "12:00 - 14:30 WIB",
+    "kode": "15920104",
+    "mata_kuliah": "Agama & Ke-NU-an 2",
+    "teori": 2,
+    "praktik": 1,
+    "jumlah_sks": 3,
+    "dosen": "Dr. Sunarto, M.Pd.I"
+  },
+  {
+    "hari": "Kamis",
+    "pukul": "07:30 - 09:00 WIB",
+    "kode": "15920115",
+    "mata_kuliah": "Struktur Data I",
+    "teori": 1,
+    "praktik": 2,
+    "jumlah_sks": 3,
+    "dosen": "Widyast.K, Kom M.Pd"
+  },
+  {
+    "hari": "Kamis",
+    "pukul": "09:00 - 10:30 WIB",
+    "kode": "15920117",
+    "mata_kuliah": "Pengantar Studi Desain",
+    "teori": 2,
+    "praktik": 1,
+    "jumlah_sks": 3,
+    "dosen": "Dewi Puspitasari, M.Sos"
+  },
+  {
+    "hari": "Kamis",
+    "pukul": "10:30 - 12:00 WIB",
+    "kode": "15920112",
+    "mata_kuliah": "Informatika Sosial",
+    "teori": 1,
+    "praktik": 2,
+    "jumlah_sks": 3,
+    "dosen": "Widyast.K, Kom M.Pd"
+  },
+  {
+    "hari": "Kamis",
+    "pukul": "14:30 - 16:00 WIB",
+    "kode": "15920118",
+    "mata_kuliah": "Sistem Analisis dan Desain",
+    "teori": 2,
+    "praktik": 1,
+    "jumlah_sks": 3,
+    "dosen": "Indah Hartati, M.T.I"
+  }
+]
