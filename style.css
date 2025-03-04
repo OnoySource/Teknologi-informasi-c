@@ -10,6 +10,13 @@ h1{
     text-align: center;
     font-weight: bold;
 }
+h2{
+    text-align: center;
+    font-weight: bold;
+    bckground-color:#DEE2E6;
+    pading:4px 0;
+    
+}
 .data{
       display:flex;
       justify-content: space-between;
@@ -63,13 +70,13 @@ span{
     bder-radius: 10px;
     width: 130px;
     text-align: center;
-    boxshadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .box img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    border:2px solid #D7263D;
 }
 
 .line {
