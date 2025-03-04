@@ -12,30 +12,35 @@
             rel="stylesheet"
         />
     </head>
-    <body><audio id="background-music" autoplay muted loop>
-    <source src="/Backsound/A_Friend_allesgutebeginntmitdir.mp3" type="audio/mpeg">
-</audio>
+    <body>
+        <audio id="background-music" autoplay muted loop>
+            <source
+                src="/Backsound/A_Friend_allesgutebeginntmitdir.mp3"
+                type="audio/mpeg"
+            />
+        </audio>
 
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const audio = document.getElementById("background-music");
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const audio = document.getElementById("background-music");
 
-        // Cek apakah ada posisi terakhir yang tersimpan
-        const savedTime = localStorage.getItem("audioTime");
-        if (savedTime) {
-            audio.currentTime = parseFloat(savedTime); // Set waktu terakhir
-        }
+                // Cek apakah ada posisi terakhir yang tersimpan
+                const savedTime = localStorage.getItem("audioTime");
+                if (savedTime) {
+                    audio.currentTime = parseFloat(savedTime); // Set waktu terakhir
+                }
 
-        audio.muted = false; // Pastikan suara bisa keluar
-        audio.play().catch(error => console.log("Autoplay dicegah:", error));
+                audio.muted = false; // Pastikan suara bisa keluar
+                audio
+                    .play()
+                    .catch(error => console.log("Autoplay dicegah:", error));
 
-        // Simpan posisi setiap 1 detik agar bisa dilanjutkan
-        setInterval(() => {
-            localStorage.setItem("audioTime", audio.currentTime);
-        }, 1000);
-    });
-</script>
- 
+                // Simpan posisi setiap 1 detik agar bisa dilanjutkan
+                setInterval(() => {
+                    localStorage.setItem("audioTime", audio.currentTime);
+                }, 1000);
+            });
+        </script>
 
         <h1>Teknologi Informasi C II</h1>
         <div class="data">
@@ -105,5 +110,6 @@
         </section>
 
         <script src="script.js"></script>
+        <script src="music.js"></script>
     </body>
 </html>
