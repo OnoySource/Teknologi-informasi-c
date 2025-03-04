@@ -5,10 +5,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Teknologi Informasi C</title>
         <link rel="stylesheet" href="style.css" title="" type="" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
     </head>
-    <body>
+    <body><audio id="background-music" autoplay muted loop>
+    <source src="/Backsound/A_Friend_allesgutebeginntmitdir.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const audio = document.getElementById("background-music");
+
+        // Cek apakah ada posisi terakhir yang tersimpan
+        const savedTime = localStorage.getItem("audioTime");
+        if (savedTime) {
+            audio.currentTime = parseFloat(savedTime); // Set waktu terakhir
+        }
+
+        audio.muted = false; // Pastikan suara bisa keluar
+        audio.play().catch(error => console.log("Autoplay dicegah:", error));
+
+        // Simpan posisi setiap 1 detik agar bisa dilanjutkan
+        setInterval(() => {
+            localStorage.setItem("audioTime", audio.currentTime);
+        }, 1000);
+    });
+</script>
+ 
+
         <h1>Teknologi Informasi C II</h1>
-        <div>
+        <div class="data">
             <button>
                 <a href="Mahasiswa/mahasiswa.html">Data Mahasiswa/i</a>
             </button>
@@ -21,14 +51,14 @@
         </div>
 
         <section class="struktur">
-            <h2>Struktur Organisasi Kelas</h2>
+            <h2 id="show" onclick="show()">Struktur Organisasi Kelas</h2>
 
             <div class="container">
                 <div class="level ketua">
                     <div class="box">
                         <img src="1725630938516.jpg" alt="Ketua Kelas" />
-                        <span><strong>Ketua Kelas</strong></span>
-                        <p>Joko</p>
+                        <span><strong>Ketua</strong></span>
+                        <p>Yusuf Al Rosyid</p>
                     </div>
                 </div>
 
@@ -37,8 +67,8 @@
                 <div class="level wakil">
                     <div class="box">
                         <img src="1725630938516.jpg" alt="Wakil Ketua" />
-                        <p><strong>Wakil Ketua</strong></p>
-                        <p>Siti</p>
+                        <span><strong>Wakil Ketua</strong></span>
+                        <p>Yusuf Aji Pratama</p>
                     </div>
                 </div>
 
@@ -47,13 +77,13 @@
                 <div class="level sekretaris-bendahara">
                     <div class="box">
                         <img src="1725630938516.jpg" alt="Sekretaris 1" />
-                        <p><strong>Sekretaris 1</strong></p>
-                        <p>Rina</p>
+                        <span><strong>Sekretaris I</strong></span>
+                        <p>Windi Nabila Sari</p>
                     </div>
                     <div class="box">
-                        <img src="1725630938516.jpg" alt="Bendahara 1" />
-                        <p><strong>Bendahara 1</strong></p>
-                        <p>Joko</p>
+                        <img src="1725630938516.jpg" alt="Sekretaris 2" />
+                        <span><strong>Sekretaris II</strong></span>
+                        <p>Revaellinaia Alzhavina Putri M</p>
                     </div>
                 </div>
 
@@ -61,27 +91,19 @@
 
                 <div class="level sekretaris-bendahara">
                     <div class="box">
-                        <img src="1725630938516.jpg" alt="Sekretaris 2" />
-                        <p><strong>Sekretaris 2</strong></p>
-                        <p>Lina</p>
+                        <img src="1725630938516.jpg" alt="Bendahara 1" />
+                        <span><strong>Bendahara I</strong></span>
+                        <p>Mufida Bahtiar</p>
                     </div>
                     <div class="box">
                         <img src="1725630938516.jpg" alt="Bendahara 2" />
-                        <p><strong>Bendahara 2</strong></p>
-                        <p>Doni</p>
-                    </div>
-                </div>
-
-                <div class="line"></div>
-
-                <div class="level seksi">
-                    <div class="box">
-                        <img src="1725630938516.jpg" alt="Seksi-seksi" />
-                        <p><strong>Seksi-seksi</strong></p>
-                        <p>Berbagai Tugas</p>
+                        <span><strong>Bendahara II</strong></span>
+                        <p>Nurul Fadilah Maharani</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <script src="script.js"></script>
     </body>
 </html>
