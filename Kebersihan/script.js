@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("data_piket.txt")
+    fetch("data_piket.json")
         .then(response => response.text())
         .then(text => {
             const dataPiket = JSON.parse(text);

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("data_mahasiswa.txt")
+    fetch("data_mahasiswa.json")
     .then(response => response.text()) 
     .then(text => {
         const dataMahasiswa = JSON.parse(text); // Ubah teks JSON ke array

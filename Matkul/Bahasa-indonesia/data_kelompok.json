@@ -1,0 +1,36 @@
+{
+  "kelompok": {
+    "1": {
+      "judul": "Sejarah perkembangan bahasa Indonesia",
+      "anggota": ["Safta", "Lutfi", "Fadila", "Mela", "Yoga"]
+    },
+    "2": {
+      "judul": "Ejaan bahasa Indonesia",
+      "anggota": ["Novia", "Windi Nabila", "Cela", "Rokatun", "Chiko"]
+    },
+    "3": {
+      "judul": "Konsep menulis karya ilmiah",
+      "anggota": ["Balbinta", "Reva", "Regina", "Mikma", "Siti Nur", "Yusuf"]
+    },
+    "4": {
+      "judul": "Konsep menulis makalah",
+      "anggota": ["Triyono", "Rani", "Resta", "Windy Ananda", "Riska"]
+    },
+    "5": {
+      "judul": "Konsep menulis artikel ilmiah",
+      "anggota": ["Fajar", "Ficky", "Fida", "Rika", "Puji"]
+    },
+    "6": {
+      "judul": "Konsep menulis resensi dan esai",
+      "anggota": ["Reza", "Saepuloh", "Rizkan", "Radit", "Robi", "Diva"]
+    },
+    "7": {
+      "judul": "Penyuntingan makalah",
+      "anggota": ["Ody", "Nina", "Syahrol", "Rahmatun", "Ristiadi"]
+    },
+    "8": {
+      "judul": "Pengembangan paragraf",
+      "anggota": ["Havdiatul", "Zaki", "Tata", "Risco", "Aji"]
+    }
+  }
+}
